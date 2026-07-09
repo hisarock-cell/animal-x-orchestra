@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Animal X Orchestraへの楽曲制作リクエスト。あなたの音楽を形に。私たちと一緒に音楽を作りましょう。">
+    <title>Request - Animal X Orchestra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><span class="hat">🎩</span>Animal X Orchestra</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="songs.html">Songs &amp; Albums</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="request.html" class="active">Request</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="ライト／ダーク切替">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+                <button class="mobile-nav-toggle" aria-label="メニュー">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <span class="eyebrow">Request</span>
+                <h1>あなたの音楽を形に。</h1>
+                <p>私たちと一緒に音楽を作りましょう</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="request-wrap">
+                    <p class="request-intro reveal">Animal X Orchestraは、AIによる楽曲制作を導入した音楽プロジェクトです。あなたの「聴きたい音楽」をシルクハットを被った動物たちが形にします。</p>
+
+                    <div class="card request-form reveal">
+                        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                            <div class="form-group">
+                                <label for="name">お名前</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">メールアドレス</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="music-style">ご希望の音楽スタイル</label>
+                                <select id="music-style" name="music-style" required>
+                                    <option value="">選択してください</option>
+                                    <option value="ロック">ロック</option>
+                                    <option value="ポップス&オーケストラ">ポップス&amp;オーケストラ</option>
+                                    <option value="ダンスロック">ダンスロック</option>
+                                    <option value="ジャズ&エレクトロ">ジャズ&amp;エレクトロ</option>
+                                    <option value="クラシック">クラシック</option>
+                                    <option value="その他">その他</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">ご予算</label>
+                                <select id="budget" name="budget" required>
+                                    <option value="">選択してください</option>
+                                    <option value="10万円以下">10万円以下</option>
+                                    <option value="10万円〜100万円">10万円〜100万円</option>
+                                    <option value="100万円〜500万円">100万円〜500万円</option>
+                                    <option value="500万円〜1000万円">500万円〜1000万円</option>
+                                    <option value="1000万円以上">1000万円以上</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">具体的なリクエスト内容</label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            <p class="form-status" role="status"></p>
+                            <div>
+                                <button type="submit" class="btn btn-primary">リクエストを送信</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a href="index.html" class="footer-logo">🎩 Animal X Orchestra</a>
+            <p class="copyright">&copy; 2026 Animal X Orchestra. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

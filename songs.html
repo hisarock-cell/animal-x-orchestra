@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Animal X Orchestraの楽曲とアルバム。ジャンルを超えた楽曲たちのストーリーと、演奏する動物たちの魅力をご紹介します。">
+    <title>Songs &amp; Albums - Animal X Orchestra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="index.html" class="logo"><span class="hat">🎩</span>Animal X Orchestra</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="story.html">Story</a></li>
+                    <li><a href="songs.html" class="active">Songs &amp; Albums</a></li>
+                    <li><a href="members.html">Members</a></li>
+                    <li><a href="request.html">Request</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button class="theme-toggle" aria-label="ライト／ダーク切替">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                </button>
+                <button class="mobile-nav-toggle" aria-label="メニュー">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <span class="eyebrow">Songs &amp; Albums</span>
+                <h1>ジャンルを超えた楽曲たち</h1>
+                <p>それぞれの曲が持つストーリーと、演奏する動物たちの魅力をご紹介します。<br><small>※楽曲は全てAIで制作しています。</small></p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Songs</h2>
+                </div>
+                <div class="songs-grid">
+                    <div class="card song-card reveal">
+                        <img src="images/gorise.jpg" alt="Rock 'N' Roll Gorilla" loading="lazy">
+                        <div class="song-body">
+                            <h3>Rock 'N' Roll Gorilla</h3>
+                            <p class="song-concept">ロックとダンスミュージックの融合</p>
+                            <p class="song-artist">Featured by ゴリーセ</p>
+                            <p>70年代のロックスピリットと、現代のダンスミュージックが融合した、エネルギッシュな楽曲。ゴリラ・ゴリーセの力強いベースプレイが印象的です。</p>
+                            <div class="player" data-src="audio/rock-n-roll-gorilla.mp3">
+                                <button class="play-btn" aria-label="再生／一時停止">
+                                    <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+                                    <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+                                </button>
+                                <div class="progress"><div class="progress-fill"></div></div>
+                                <span class="time">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card song-card reveal">
+                        <img src="images/rabit.jpg" alt="Dancing in the Forest" loading="lazy">
+                        <div class="song-body">
+                            <h3>Dancing in the Forest</h3>
+                            <p class="song-concept">ダンスロックとクラシックの融合</p>
+                            <p class="song-artist">Featured by ストラビット</p>
+                            <p>幻想的な森の世界を描く、ダンスロックとクラシックの融合楽曲。バイオリニスト、ストラビットの優雅なピアノプレイが光ります。</p>
+                            <div class="player" data-src="audio/dancing-in-the-forest.mp3">
+                                <button class="play-btn" aria-label="再生／一時停止">
+                                    <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+                                    <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+                                </button>
+                                <div class="progress"><div class="progress-fill"></div></div>
+                                <span class="time">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card song-card reveal">
+                        <img src="images/eneta.jpg" alt="Stay with me" loading="lazy">
+                        <div class="song-body">
+                            <h3>Stay with me</h3>
+                            <p class="song-concept">ブリットポップとオーケストラの融合</p>
+                            <p class="song-artist">Featured by エネトラ</p>
+                            <p>90年代ブリットポップの香りと、壮大なオーケストラが織り成す、心に響く楽曲。俊足のギタリスト、エネトラの情熱的なボーカルと、バンドリーダーのストラビットによる繊細なバイオリンが魅力です。</p>
+                            <div class="player" data-src="audio/stay-with-me.mp3">
+                                <button class="play-btn" aria-label="再生／一時停止">
+                                    <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><polygon points="8,5 19,12 8,19"/></svg>
+                                    <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>
+                                </button>
+                                <div class="progress"><div class="progress-fill"></div></div>
+                                <span class="time">--:--</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card song-card reveal">
+                        <img src="images/foxy-groove.jpg" alt="Foxy Groove" loading="lazy">
+                        <div class="song-body">
+                            <h3>Foxy Groove</h3>
+                            <p class="song-concept">ファンクとジャズの融合</p>
+                            <p class="song-artist">Featured by モンキルト</p>
+                            <p>スムーズなファンクビートとジャズの即興性が融合した、踊りたくなる楽曲。モンキルトの流れるようなギターソロが特徴です。</p>
+                        </div>
+                    </div>
+
+                    <div class="card song-card reveal">
+                        <img src="images/echoes-of-the-castle.jpg" alt="Echoes of the Castle" loading="lazy">
+                        <div class="song-body">
+                            <h3>Echoes of the Castle</h3>
+                            <p class="song-concept">ピアノとオーケストラの融合</p>
+                            <p class="song-artist">Featured by ショパニャン</p>
+                            <p>音の歴史が響く静かな古城。ピアノとオーケストラが融合した楽曲。美しい伸びやかな歌声とピアノの旋律が光ります。</p>
+                        </div>
+                    </div>
+
+                    <div class="card song-card reveal">
+                        <img src="images/moonlight-strings.jpg" alt="Moonlight Strings" loading="lazy">
+                        <div class="song-body">
+                            <h3>Moonlight Strings</h3>
+                            <p class="song-concept">EDMとクラシックの融合</p>
+                            <p class="song-artist">Featured by ストラビット</p>
+                            <p>壮大なスケールのEDMとクラシックが融合した、圧巻の楽曲。ストラビットの力強いバイオリンが特徴です。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Albums</h2>
+                </div>
+                <div class="albums-grid">
+                    <div class="card album-card reveal">
+                        <img src="images/dance-revolution.jpg" alt="Dance Revolution" loading="lazy">
+                        <div class="album-body">
+                            <h3>Dance Revolution</h3>
+                            <p class="album-year">2025</p>
+                            <p>Animal X Orchestraの1stアルバム。ダンスロックを中心とした、グルーヴィーなサウンドのアルバム。踊りたくなる楽曲の数々。</p>
+                        </div>
+                    </div>
+
+                    <div class="card album-card reveal">
+                        <img src="images/the-musical-ark-train.jpg" alt="The Musical Ark train" loading="lazy">
+                        <div class="album-body">
+                            <h3>The Musical Ark train</h3>
+                            <p class="album-year">2025</p>
+                            <p>音楽に導かれた動物たちのジャンルも国境も超えて進む音楽列車の物語。幻想的な“音の森”から出発したシルクハットをかぶった動物たちが、音楽の力で世界をつなぐ旅へと出発します。</p>
+                        </div>
+                    </div>
+
+                    <div class="card album-card reveal">
+                        <div class="album-cover-placeholder">Coming Soon</div>
+                        <div class="album-body">
+                            <h3>Coming Soon</h3>
+                            <p class="album-year">2025</p>
+                            <p>次回作の詳細は、近日公開予定です。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <a href="index.html" class="footer-logo">🎩 Animal X Orchestra</a>
+            <p class="copyright">&copy; 2026 Animal X Orchestra. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
