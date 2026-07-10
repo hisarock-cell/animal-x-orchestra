@@ -185,7 +185,20 @@ h1, h2, h3 {
 .hero-visual img {
   border-radius: var(--radius);
   box-shadow: var(--shadow-lift);
+  display: block;
+  max-width: 90%;
+  margin-inline: auto;
 }
+
+.hero-img-light {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+
+.hero-visual .hero-img-dark { display: none; }
+[data-theme="dark"] .hero-visual .hero-img-light { display: none; }
+[data-theme="dark"] .hero-visual .hero-img-dark { display: block; }
 
 @media (max-width: 800px) {
   .hero { padding: 48px 0 24px; }
